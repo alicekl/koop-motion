@@ -88,12 +88,14 @@
           <div class="is-size-5 publication-authors">
             <span class="author-block">GRASP Lab, University of Pennsylvania,</span>
           </div>
+          
+          <h2 class="is-size-4"><strong>Conference on Robot Learning (CoRL 2025)</strong></h2>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://koopmotion.github.io"
+                <a href="https://arxiv.org/abs/2509.09074"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -101,15 +103,7 @@
                   <span>Paper</span>
                 </a>
               </span>
-              <span class="link-block">
-                <a href="https://koopmotion.github.io"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+              
               <!-- Video Link. -->
               <span class="link-block">
                 <a href="https://koopmotion.github.io"
@@ -182,6 +176,301 @@ Additionally, KoopMotion provides a significant improvement over baselines when 
     </div>
     <!--/ Abstract. -->
 
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+      <!-- LfD. -->
+      <div class="column">
+        <div class="content">
+          <h3 class="title is-4">Learning from Demonstrations (LfD)</h3>
+          <p>
+            Using <span class="dnerf">KoopMotion</span>, we learn motion policies <strong>(black)</strong> from demonstrations <span style="color: red; font-weight: bold;"> (red)</span>. Using a Koopman operator theoretic approach, we are able to learn a smooth underlying dynamical system that captures the <strong>spatial</strong> and <strong>temporal</strong> structure of the demonstrations. 
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/khamesh_demo_to_dynamical_system.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD. -->
+
+      <!-- Attractor. -->
+      <div class="column">
+        <h3 class="title is-4">Novel KoopMotion Losses</h3>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              We introduce additional novel loss terms to our optimize over, so that the surrounding vector field <span style="color: gray; font-weight: bold;"> (gray)</span> guides the system (a robot) toward the desired demonstration when away from the <span style="color: green; font-weight: bold;"> (green)</span> initial conditions along the <span style="color: blue; font-weight: bold;"> (blue)</span> trajectories, and to stop at the demonstration end-point.
+            </p>
+            <video id="matting-video" autoplay controls muted loop playsinline height="100%">
+              <source src="./static/videos/output_khamesh_experiment2.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!--/ Attractor. -->
+
+<section class="section">
+  <h3 class="title is-4">Additional examples of learning from demonstrations from the <a
+              href="https://github.com/justagist/pyLasaDataset"> LASA Dataset </a> </h3>
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-centered">
+      
+
+      <!-- LfD -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          <p>
+           SharpC
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_sharpc_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD -->
+
+      <!-- Attractor 1 -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+           Leaf2
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_leaf2_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Attractor 1 -->
+
+      <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+            Snake 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_snake_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+       <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+            S Shape
+          </p> 
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_s_experiment3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      
+       <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+            BendedLine
+          </p> 
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_bended_line_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+            J2
+          </p> 
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_j2_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="column is-full has-text-centered">
+
+      <!-- LfD. -->
+      <div class="columns is-centered">
+        <div class="content">
+          <h3 class="title is-4">Learning flow fields with more than one pattern</h3>
+          <p>
+            We can also learn flow fields where demonstrations start from different groups of initial conditions, and exhibit different speeds. 
+          </p>
+          <video id="dollyzoom" autoplay controls muted loop playsinline width="50%">
+            <source src="./static/videos/output_mm4_experiment2.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD. -->
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <h3 class="title is-4">Convergence from additional points (Circular and Linear) </h3>
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-centered">
+      
+
+      <!-- LfD -->
+      <div class="column is-one-half">
+        <div class="content is-centered">
+          <p>
+           G Shape convergence from original domain 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_lasa_g.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD -->
+
+      <!-- Attractor 1 -->
+      <div class="column is-one-half">
+        <div class="content is-centered">
+          
+          <p>
+           G Shape cnvergence from increased domain 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_lasa_g_from_afar.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Attractor 1 -->
+
+      
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section">
+  <h3 class="title is-4"> </h3>
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-centered">
+
+<!-- LfD -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          <p>
+           N Shape convergence from original domain 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_n.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD -->
+
+
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          <p>
+           N Shape convergence from increased domain 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_n_from_afar_medium.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!-- Attractor 1 -->
+      <div class="column is-one-third">
+        <div class="content is-centered">
+          
+          <p>
+           N Shape convergence from an even larger domain 
+          </p>
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_n_from_afar_high.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Attractor 1 -->
+
+
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <h3 class="title is-4">Presented at CORL 2025</h3>
+  <div class="container is-max-desktop">
+    <div class="columns is-multiline is-centered">
+      
+
+      <!-- LfD -->
+      <div class="column is-one-forth">
+        <div class="column is-full has-text-centered">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_sharpc_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ LfD -->
+
+      <!-- Attractor 1 -->
+      <div class="column is-one-forth">
+        <div class="column is-full has-text-centered">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_bended_line_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <!--/ Attractor 1 -->
+
+      <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-forth">
+        <div class="column is-full has-text-centered">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_r_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+       <!-- Attractor 2 (duplicate for now) -->
+      <div class="column is-one-forth">
+        <div class="column is-full has-text-centered">
+          <video autoplay controls muted loop playsinline width="100%">
+            <source src="./static/videos/output_l_experiment2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+  </div>
+</section>
     
 
 <section class="section" id="BibTeX">
@@ -190,8 +479,9 @@ Additionally, KoopMotion provides a significant improvement over baselines when 
     <pre><code>@article{li2025koopmotion,
   author    = {Alice Kate Li, Thales C. Silva, Victoria Edwards, Vijay Kumar, and M. Ani Hsieh},
   title     = {KoopMotion: Learning Almost Divergence Free Koopman Flow Fields for Motion Planning},
-  journal   = {CoRL},
+  journal   = {Conference on Robot Learning (CoRL)},
   year      = {2025},
+  url={https://arxiv.org/abs/2509.09074}, 
 }</code></pre>
   </div>
 </section>
@@ -217,11 +507,10 @@ Additionally, KoopMotion provides a significant improvement over baselines when 
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
           <p>
-            This means you are free to borrow the <a
+            This website was modified from <a href="https://nerfies.github.io/" >Nerfies.</a> From their website:
+            You are free to borrow the <a
               href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
             we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
           </p>
         </div>
       </div>
